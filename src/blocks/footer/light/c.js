@@ -124,12 +124,21 @@ function LightFooterC(props) {
       </div>
       <div className="border-t border-gray-200">
         <div className="container px-5 py-8 flex flex-wrap mx-auto items-center">
-          <div className="flex md:flex-no-wrap flex-wrap justify-center md:justify-start">
-            <input
-              className={`sm:w-64 w-40 bg-gray-100 rounded sm:mr-4 mr-2 border border-gray-400 focus:outline-none focus:border-${props.theme}-500 text-base py-2 px-4`}
-              placeholder="Placeholder"
-              type="text"
-            />
+          <div className="flex md:flex-no-wrap flex-wrap justify-center items-end md:justify-start">
+            <div className="relative sm:w-64 w-40 sm:mr-4 mr-2">
+              <label
+                htmlFor="footer-field"
+                className="leading-7 text-sm text-gray-600"
+              >
+                Placeholder
+              </label>
+              <input
+                type="text"
+                id="footer-field"
+                name="footer-field"
+                className={`w-full bg-gray-100 rounded border border-gray-300 focus:border-${props.theme}-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out`}
+              />
+            </div>
             <button className={`inline-flex text-white bg-${props.theme}-500 border-0 py-2 px-6 focus:outline-none hover:bg-${props.theme}-600 rounded`}>
               Button
             </button>
@@ -200,7 +209,7 @@ function LightFooterC(props) {
       <div className="bg-gray-200">
         <div className="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
           <p className="text-gray-500 text-sm text-center sm:text-left">
-            © 2020 madde —
+            © 2020 tailblocks —
             <a href="https://twitter.com/knyttneve" className="text-gray-600 ml-1" target="_blank" rel="noopener noreferrer">
               @knyttneve
             </a>

@@ -67,12 +67,21 @@ function DarkFooterE(props) {
             <h2 className="title-font font-medium text-white tracking-widest text-sm mb-3">
               SUBSCRIBE
             </h2>
-            <div className="flex xl:flex-no-wrap md:flex-no-wrap lg:flex-wrap flex-wrap justify-center md:justify-start">
-              <input
-                className={`w-40 sm:w-auto bg-gray-800 rounded text-white xl:mr-4 lg:mr-0 sm:mr-4 mr-2 border border-gray-700 focus:outline-none focus:border-${props.theme}-500 text-base py-2 px-4`}
-                placeholder="Placeholder"
-                type="text"
-              ></input>
+            <div className="flex xl:flex-no-wrap md:flex-no-wrap lg:flex-wrap flex-wrap justify-center items-end md:justify-start">
+              <div className="relative w-40 sm:w-auto xl:mr-4 lg:mr-0 sm:mr-4 mr-2">
+                <label
+                  htmlFor="footer-field"
+                  className="leading-7 text-sm text-gray-400"
+                >
+                  Placeholder
+                </label>
+                <input
+                  type="text"
+                  id="footer-field"
+                  name="footer-field"
+                  className={`w-full bg-gray-800 rounded border border-gray-700 focus:border-${props.theme}-500 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out`}
+                />
+              </div>
               <button className={`lg:mt-2 xl:mt-0 flex-shrink-0 inline-flex text-white bg-${props.theme}-500 border-0 py-2 px-6 focus:outline-none hover:bg-${props.theme}-600 rounded`}>
                 Button
               </button>
@@ -99,10 +108,10 @@ function DarkFooterE(props) {
             >
               <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
             </svg>
-            <span class="ml-3 text-xl">madde</span>
+            <span className="ml-3 text-xl">tailblocks</span>
           </a>
           <p className="text-sm text-gray-600 sm:ml-6 sm:mt-0 mt-4">
-            © 2020 madde —
+            © 2020 tailblocks —
             <a href="https://twitter.com/knyttneve" className="text-gray-500 ml-1" target="_blank" rel="noopener noreferrer">
               @knyttneve
             </a>
